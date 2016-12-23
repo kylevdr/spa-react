@@ -5,7 +5,7 @@ export default class Home extends React.Component {
 		return (
 			<div>
 				<h1>{this.props.pageName}</h1>
-				<p>Hello from the {this.props.pageName.toLowerCase()} page!</p>
+				<p>{this.props.text}</p>
 			</div>
 		);
 	}

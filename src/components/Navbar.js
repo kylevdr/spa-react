@@ -1,13 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { IndexLink } from 'react-router';
 
 export default class Navbar extends React.Component {
 	render() {
 		return (
-			<ul className="navbar">
-				<li><Link to="/">Home</Link></li>
-				<li><Link to="/about">About</Link></li>
-			</ul>
+			<nav>
+				<ul>
+					<li><IndexLink activeClassName="active" to="/">Home</IndexLink></li>
+					<li><IndexLink activeClassName="active" to="/products">Products</IndexLink></li>
+					<li><IndexLink activeClassName="active" to="/about">About</IndexLink></li>
+				</ul>
+			</nav>
 		);
 	}
 }

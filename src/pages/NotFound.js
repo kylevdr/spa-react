@@ -1,12 +1,12 @@
 import React from 'react';
+import PageTmpl from '../components/PageTmpl';
+
+const text = 'Page not found.';
 
 export default class NotFound extends React.Component {
 	render() {
 		return (
-			<div>
-				<h1>404</h1>
-				<p>Page not found.</p>
-			</div>
+			<PageTmpl pageName="404" text={text} />
 		);
 	}
 }
